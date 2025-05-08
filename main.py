@@ -28,12 +28,12 @@ def model_prediction(test_image_path):
 
 st.sidebar.title("Dashboard")
 app_mode = st.sidebar.selectbox(
-    "Select Page", ["Disease Identification"]
+    "Select Page", ["Garbage identification"]
 )
 
 
-if app_mode == "Disease Identification":
-    st.header("Chào mừng đến với trang Phân loại reasc thâir")
+if app_mode == "Garbage identification":
+    st.header("Chào mừng đến với trang Phân loại rác thải")
 
     # Chọn phương thức nhập ảnh
     st.subheader("🔍 Chọn cách nhập ảnh")
@@ -61,7 +61,7 @@ if app_mode == "Disease Identification":
             tmp_file.write(image.read())
             temp_file_path = tmp_file.name
 
-        st.image(temp_file_path, caption="Ảnh bạn đã chọn", use_column_width=True)
+        st.image(temp_file_path, caption="Ảnh bạn đã chọn", use_container_width=True)
         # Predict button
         if st.button("Predict"):
             with st.spinner("Please Wait.."):
@@ -82,36 +82,84 @@ if app_mode == "Disease Identification":
 
             with st.expander("Đọc thêm"):
                 st.write("Dự đoán :")
-                # CNV
+                # battery
                 if result_index == 0:
                     st.write(
                         """
-                        Ảnh chụp cho thấy đây là pin sẽ nằm .*
+                        Ảnh chụp cho thấy đây là pin thuộc nhóm "Rác thải điện tử".*
                         """
                     )
-                    st.image(test_image)
-                # DME
+                    st.image(image)
+                # biological
                 if result_index == 1:
                     st.write(
                         """
-                        Ảnh chụp OCT cho thấy *DME với tình trạng dày võng mạc và dịch trong võng mạc.*
+                        Ảnh chụp cho thấy đây là thực phẩm thừa, vỏ trái cây, rau củ thuộc nhóm "Rác thải hữu cơ".*
                         """
                     )
-                    st.image(test_image)
-                # DRUSEN
+                    st.image(image)
+                # cardboard
                 if result_index == 2:
                     st.write(
                         """
-                        Ảnh chụp OCT cho thấy *các lắng đọng DRUSEN trong giai đoạn đầu của thoái hóa điểm vàng (AMD).*
+                        Ảnh chụp cho thấy đây là bìa cứng thuộc nhóm "Rác thải tái chế".*
                         """
                     )
-                    st.image(test_image)
-                # NORMAL
+                    st.image(image)
+                # clothes
                 if result_index == 3:
                     st.write(
                         """
-Ảnh chụp OCT cho thấy *võng mạc bình thường với hình dạng hố hoàng điểm được bảo toàn.*
+                        Ảnh chụp cho thấy đây là vải thuộc nhóm "Rác thải công nghiệp".*
                         """
                     )
-                    st.image(test_image)
+                    st.image(image)
+                # glass
+                if result_index == 4:
+                    st.write(
+                        """
+                        Ảnh chụp cho thấy đây là thủy tinh thuộc nhóm "Rác thải tái chế".*
+                        """
+                    )
+                    st.image(image)
+                # metal
+                if result_index == 5:
+                    st.write(
+                        """
+                        Ảnh chụp cho thấy đây là vật dụng kim loại thuộc nhóm "Rác thải tái chế hoặc Rác thải công nghiệp".*
+                        """
+                    )
+                    st.image(image)
+                # paper
+                if result_index == 6:
+                    st.write(
+                        """
+                        Ảnh chụp cho thấy đây là giấy thuộc nhóm "Rác thải tái chế".*
+                        """
+                    )
+                    st.image(image)
+                # plastic
+                if result_index == 7:
+                    st.write(
+                        """
+                        Ảnh chụp cho thấy đây là thủy tinh thuộc nhóm "Rác thải tái chế hoặc Rác thải sinh hoạt".*
+                        """
+                    )
+                    st.image(image)
+                # shoes
+                if result_index == 8:
+                    st.write(
+                        """
+                        Ảnh chụp cho thấy đây là giày thuộc nhóm "Rác thải tái chế hoặc Rác thải sinh hoạt".*
+                        """
+                    )
+                    st.image(image)
+                # trash
+                if result_index == 9:
+                    st.write(
+                        """
+                        Ảnh chụp cho thấy đây là rác thải hỗn hợp thuộc nhóm "Rác thải sinh hoạt".*
+                        """
+                    )
+                    st.image(image)
 
