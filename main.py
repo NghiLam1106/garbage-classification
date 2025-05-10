@@ -86,7 +86,7 @@ if app_mode == "Garbage identification":
                 if result_index == 0:
                     st.write(
                         """
-                        Ảnh chụp cho thấy đây là pin thuộc nhóm "Rác thải điện tử".*
+                        Ảnh chụp cho thấy đây là pin thuộc nhóm "Rác thải điện tử".
                         """
                     )
                     st.image(image)
@@ -94,7 +94,7 @@ if app_mode == "Garbage identification":
                 if result_index == 1:
                     st.write(
                         """
-                        Ảnh chụp cho thấy đây là thực phẩm thừa, vỏ trái cây, rau củ thuộc nhóm "Rác thải hữu cơ".*
+                        Ảnh chụp cho thấy đây là thực phẩm thừa, vỏ trái cây, rau củ thuộc nhóm "Rác thải hữu cơ".
                         """
                     )
                     st.image(image)
@@ -102,7 +102,7 @@ if app_mode == "Garbage identification":
                 if result_index == 2:
                     st.write(
                         """
-                        Ảnh chụp cho thấy đây là bìa cứng thuộc nhóm "Rác thải tái chế".*
+                        Ảnh chụp cho thấy đây là bìa cứng thuộc nhóm "Rác thải tái chế".
                         """
                     )
                     st.image(image)
@@ -110,7 +110,7 @@ if app_mode == "Garbage identification":
                 if result_index == 3:
                     st.write(
                         """
-                        Ảnh chụp cho thấy đây là vải thuộc nhóm "Rác thải công nghiệp".*
+                        Ảnh chụp cho thấy đây là vải thuộc nhóm "Rác thải công nghiệp".
                         """
                     )
                     st.image(image)
@@ -118,7 +118,7 @@ if app_mode == "Garbage identification":
                 if result_index == 4:
                     st.write(
                         """
-                        Ảnh chụp cho thấy đây là thủy tinh thuộc nhóm "Rác thải tái chế".*
+                        Ảnh chụp cho thấy đây là thủy tinh thuộc nhóm "Rác thải tái chế".
                         """
                     )
                     st.image(image)
@@ -126,7 +126,7 @@ if app_mode == "Garbage identification":
                 if result_index == 5:
                     st.write(
                         """
-                        Ảnh chụp cho thấy đây là vật dụng kim loại thuộc nhóm "Rác thải tái chế hoặc Rác thải công nghiệp".*
+                        Ảnh chụp cho thấy đây là vật dụng kim loại thuộc nhóm "Rác thải tái chế hoặc Rác thải công nghiệp".
                         """
                     )
                     st.image(image)
@@ -134,7 +134,7 @@ if app_mode == "Garbage identification":
                 if result_index == 6:
                     st.write(
                         """
-                        Ảnh chụp cho thấy đây là giấy thuộc nhóm "Rác thải tái chế".*
+                        Ảnh chụp cho thấy đây là giấy thuộc nhóm "Rác thải tái chế".
                         """
                     )
                     st.image(image)
@@ -142,7 +142,7 @@ if app_mode == "Garbage identification":
                 if result_index == 7:
                     st.write(
                         """
-                        Ảnh chụp cho thấy đây là thủy tinh thuộc nhóm "Rác thải tái chế hoặc Rác thải sinh hoạt".*
+                        Ảnh chụp cho thấy đây là thủy tinh thuộc nhóm "Rác thải tái chế hoặc Rác thải sinh hoạt".
                         """
                     )
                     st.image(image)
@@ -150,7 +150,7 @@ if app_mode == "Garbage identification":
                 if result_index == 8:
                     st.write(
                         """
-                        Ảnh chụp cho thấy đây là giày thuộc nhóm "Rác thải tái chế hoặc Rác thải sinh hoạt".*
+                        Ảnh chụp cho thấy đây là giày thuộc nhóm "Rác thải tái chế hoặc Rác thải sinh hoạt".
                         """
                     )
                     st.image(image)
@@ -158,7 +158,7 @@ if app_mode == "Garbage identification":
                 if result_index == 9:
                     st.write(
                         """
-                        Ảnh chụp cho thấy đây là rác thải hỗn hợp thuộc nhóm "Rác thải sinh hoạt".*
+                        Ảnh chụp cho thấy đây là rác thải hỗn hợp thuộc nhóm "Rác thải sinh hoạt".
                         """
                     )
                     st.image(image)
